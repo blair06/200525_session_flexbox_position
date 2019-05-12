@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style>
+        * { box-sizing: border-box;}
+        body {margin:0;} 
+        a {text-decoration: none;}
+        a:link, a:visited, a:active {color:inherit;}
+
+        header {background: skyblue;}
+        nav {background: pink;}
+        aside{background: lightgray;}
+        footer{background: lightcoral;}
+
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        .content{
+            flex: 70%;
+            padding: 40px;
+        }
+        .aside{
+            flex: 30%;
+            padding: 40px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navbar a{
+            padding: 8px;
+            margin-right: 20px;
+        }
+        .navbar a:hover{
+            color: black;
+            background-color: white;
+        }
+        .header{
+            padding: 30px;
+            text-align: center;
+        }
+        .footer{
+            padding: 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <h1>My Webpage</h1> 
+    </header>
+    <nav class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Q&A</a>
+    </nav>
+    <div id="main">
+        <article class="content">
+            <h2>About me</h2>
+            <h3>introduce</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ipsa alias ut doloribus fugit placeat. Nesciunt itaque soluta nemo id, qui dolore ea omnis maxime hic quasi recusandae, eligendi possimus.</p>
+        </article>
+        <aside class="aside">
+            <h2>AD</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus consequuntur porro sunt, qui itaque illum dolor aspernatur illo, doloribus ipsa magni maxime eligendi exercitationem, voluptatibus asperiores mollitia rem molestias libero!</p>
+        </aside>
+    </div>
+    <footer class="footer">
+        <h2>Footer</h2>
+    </footer>
+  </body>
+</html>
