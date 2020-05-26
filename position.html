@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { margin: 0; }
+    .parent {
+        position: relative;
+      width: 150px;
+      height: 150px;
+      top: 50px;
+      background: #bcbcbc;
+      border: 1px solid #bcbcbc;
+      margin: 50px;
+    }
+    .child-box {
+      /* 이곳에 position 속성을 사용해 보세요 
+      예시) position: relative; */
+      position: absolute;
+      top: 50px; left: 50px;
+      /*position:absolute실습시 주석을 풀어주세요 
+      width:150px;
+      height:150px; */
+      background: #2E303D;
+      color: #e55c3c;
+      font-weight: bold;
+      text-align: center;
+      line-height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent"> <!--부모요소-->
+    <div class="child-box"><!--자식요소-->
+        child box
+    </div>
+  </div>
+</body>
+</html>
